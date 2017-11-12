@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+//long fib(long n);
+
+void main()
+{
+	long n = 30;
+	printf("fib=%d", fib(n));
+	system("pause");
+	return 0;
+}
+long fib(long n)
+{
+	if (n == 0) return 0;
+	else if (n == 1) return 1;
+	else return fib(n - 1) + fib(n - 2);
+}
